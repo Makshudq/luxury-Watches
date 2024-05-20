@@ -1,0 +1,27 @@
+.cards-group {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  padding: 50px 80px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .cards-group {
+    gap: 45px;
+    padding: 50px 30px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .cards-group {
+    gap: 8px;
+    padding: 50px 30px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .cards-group {
+    gap: 8px;
+    padding: 16px;
+    grid-template-columns: 1fr;
+  }
+}

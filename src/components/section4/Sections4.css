@@ -1,0 +1,53 @@
+.cardsGrp {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  padding: 50px 80px;
+
+  img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .cardsGrp {
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    gap: 20px;
+    padding: 50px 30px;
+  }
+
+  .cardsGrp .img-sections {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .cardsGrp {
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    gap: 5px;
+    padding: 50px 10px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .cardsGrp {
+    gap: 8px;
+    padding: 10px;
+    grid-template-columns: 50% 50% 0%;
+  }
+
+  .cardsGrp .img-sections {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .imginner-div {
+    width: 100%;
+  }
+}

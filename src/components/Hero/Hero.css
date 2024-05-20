@@ -1,0 +1,86 @@
+.top-banner {
+  /* position: relative;
+   */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 577px;
+  background-position: bottom;
+  background-image: url("../../assets/watchBannerImg.jpg");
+  /* height: 590px; */
+  img {
+    /* position: absolute;
+    width: 100%;
+    object-fit: fill;
+    object-position: right; */
+    /* height: 600px; */
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .main-home-container {
+    /* padding: 10px 2%; */
+  }
+
+  /* .top-banner {
+    img {
+      position: absolute;
+      width: 100%;
+      object-fit: fill;
+      object-position: right;
+    
+    }
+  } */
+  .section2 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding: 50px 30px;
+  }
+
+  .img-div {
+    width: 100vw;
+  }
+
+  .main {
+    display: none;
+  }
+  .full {
+    display: block;
+    width: 46%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  /* .top-banner {
+ 
+    margin-bottom: 130px;
+    img {
+      position: absolute;
+      width: 100%;
+      object-fit: fill;
+      object-position: right;
+  
+    }
+  } */
+}
+
+@media only screen and (max-width: 576px) {
+  .top-banner {
+    background-image: none;
+    min-height: 260px;
+  }
+
+  .img-div {
+    /* width: 100vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .full {
+    width: 100%;
+    height: auto;
+  }
+  .full33 {
+    display: none;
+  }
+}
